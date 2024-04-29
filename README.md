@@ -40,7 +40,7 @@ data-dep=""
 ### Пример использования для Польши
 Что мы заолняем в коде:
 
-![before using](images/before-using.png)
+![code](images/code.png)
 
 Что увидит пользователь:
 
