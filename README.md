@@ -19,8 +19,11 @@
 
 в тексте используйте следующие теги:
 
-`<span data-dep-currency>$</span>` - для знака валюты
+для знака валюты
+```<span data-dep-currency>$</span>``` 
 
-`<span data-dep-value>250</span>` - для суммы 
+для суммы
+```<span data-dep-value>250</span>``` 
 
-`<span data-dep-code>USD</span>` - для кода валюты
+для кода валюты
+```<span data-dep-code>USD</span>```
