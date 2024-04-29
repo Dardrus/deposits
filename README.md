@@ -12,4 +12,5 @@
 <script src="https://cdn.jsdelivr.net/gh/Dardrus/deposits@v1.0.0/script.js"></script>
 ```
 Добавьте файл `deposit-php` в корень вашего проекта
+
 ![deposit php](images/deposit-php.png)
