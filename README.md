@@ -19,21 +19,21 @@
 ```html
 data-dep=""
 ``` 
-Пример использования для Польши `<body data-dep="PL">`
+Пример использования для Польши: `<body data-dep="PL">`
 
 ### В тексте используйте следующие теги:
 
-для знака валюты
+Для знака валюты:
 ```html
 <span data-dep-currency>$</span>
 ``` 
 
-для суммы
+Для суммы:
 ```html
 <span data-dep-value>250</span>
 ``` 
 
-для кода валюты
+Для кода валюты:
 ```html
 <span data-dep-code>USD</span>
 ```
