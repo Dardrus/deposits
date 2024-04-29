@@ -19,7 +19,6 @@
 ```html
 data-dep=""
 ``` 
-Пример использования для Польши: `<body data-dep="PL">`
 
 ### В тексте используйте следующие теги:
 
@@ -37,3 +36,13 @@ data-dep=""
 ```html
 <span data-dep-code>USD</span>
 ```
+
+### Пример использования для Польши
+
+До отработки скрипта:
+
+![before using](images/before-using.png)
+
+После отработки скрипта:
+
+![after using](images/after-using.png)
