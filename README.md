@@ -38,11 +38,9 @@ data-dep=""
 ```
 
 ### Пример использования для Польши
-
-До отработки скрипта:
-
+Что мы заолняем в коде:
 ![before using](images/before-using.png)
 
-После отработки скрипта:
+Что увидит пользователь:
 
-![after using](images/after-using.png)
+![interface](images/interface.png)
