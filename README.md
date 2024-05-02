@@ -21,9 +21,7 @@
 data-dep=""
 ``` 
 
-В админке WP выделено специальное поле (если такого поля нет, [Перейти к разделу](#для-wordpress)), находится во вкладке header и имеет название `Deposit code`, установите в него код страны
-
-![wp-admin](images/wp-admin.png)
+В админке WP выделено специальное поле, [Перейти к разделу](#для-wordpress)
 
 
 ### В тексте используйте следующие теги:
@@ -58,7 +56,7 @@ data-dep=""
 
 ![header deposit code](images/header_deposit_code.png)
 
-### фрагмент кода на PHP
+### Фрагмент кода на PHP
 
 ```php
 <?php
@@ -70,3 +68,7 @@ data-dep=""
 ```php
 data-dep="<?= $header_deposit_code  ?>"
 ```
+
+### Пример интерфейса
+
+![wp-admin](images/wp-admin.png)
