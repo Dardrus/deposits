@@ -52,6 +52,8 @@ data-dep=""
 
 ![wp-admin](images/wp-admin.png)
 
+### фрагмент кода на PHP
+
 ```php
 <?php
 $home_id = get_option('page_on_front');
