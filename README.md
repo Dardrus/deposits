@@ -62,8 +62,8 @@ data-dep=""
 
 ```php
 <?php
-$home_id = get_option('page_on_front');
-$header_deposit_code = get_field('header_deposit_code', $home_id);
+  $home_id = get_option('page_on_front');
+  $header_deposit_code = get_field('header_deposit_code', $home_id);
 ?>
 ```
 
