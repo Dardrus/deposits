@@ -45,3 +45,21 @@ data-dep=""
 Что увидит пользователь:
 
 ![interface](images/interface.png)
+
+## Для WordPress
+
+через ACF необходимо вывести поле с названием `Deposit code` во вкладке header
+
+![wp-admin](images/wp-admin.png)
+
+```php
+<?php
+$home_id = get_option('page_on_front');
+$header_deposit_code = get_field('header_deposit_code', $home_id);
+?>
+```
+
+
+```php
+data-dep="<?= $header_deposit_code  ?>"
+```
