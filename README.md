@@ -56,6 +56,7 @@ data-dep=""
 
 через ACF необходимо вывести поле с названием `Deposit code` во вкладке header
 
+![header deposit code](images/header_deposit_code.png)
 
 ### фрагмент кода на PHP
 
