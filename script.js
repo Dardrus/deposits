@@ -22,7 +22,7 @@ fetch(url)
             const dataCode = data.code;
 
             setInnerText(currencies, dataCurrency);
-            setInnerText(values, dataValue);
+            setInnerTextValue(values, dataValue);
             setInnerText(codes, dataCode);
         }
     })
@@ -33,6 +33,26 @@ fetch(url)
 function setInnerText(array, text) {
     array.forEach(item => {
         item.innerText = text;
+    });
+}
+
+
+function setInnerTextValue(array, text) {
+    // Удаляем запятые из текста и преобразуем в число
+    const numericText = Number(text.replace(/,/g, ''));
+
+    array.forEach(item => {
+        const depValue = Number(item.getAttribute('data-dep-value'));
+        let result;
+
+        if (depValue > 0) {
+            result = numericText * depValue; // Выполняем математическую операцию
+        } else {
+            result = numericText;
+        }
+
+        // Преобразуем результат обратно в строку с разделителями тысяч
+        item.innerText = result.toLocaleString('en-US');
     });
 }
 
