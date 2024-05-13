@@ -7,7 +7,7 @@
 Добавьте следующий код перед закрывающим тегом `</body>` на вашем сайте:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Dardrus/deposits@v1.0.1/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Dardrus/deposits@v1.0.2/script.js"></script>
 ```
 Добавьте файл `deposit-php` в корень вашего проекта
 
@@ -49,6 +49,11 @@ data-dep=""
 Что увидит пользователь:
 
 ![interface](images/interface.png)
+
+Так же можно умножить значение депозита. 
+Например:
+<span data-dep-value="20">250</span>
+получим `5,000`
 
 ## Для WordPress
 
