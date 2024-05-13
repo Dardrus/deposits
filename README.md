@@ -51,8 +51,11 @@ data-dep=""
 ![interface](images/interface.png)
 
 Так же можно умножить значение депозита. 
-Например:
-<span data-dep-value="20">250</span>
+
+Например выводим на странице:
+
+`<span data-dep-value="20">250</span>`
+
 получим `5,000`
 
 ## Для WordPress
