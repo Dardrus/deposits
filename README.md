@@ -7,7 +7,7 @@
 Добавьте следующий код перед закрывающим тегом `</body>` на вашем сайте:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Dardrus/deposits@v1.0.2/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Dardrus/deposits@v1.0.3/script.js"></script>
 ```
 Добавьте файл `deposit-php` в корень вашего проекта
 
