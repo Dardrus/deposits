@@ -48,7 +48,7 @@ data-dep=""
 
 Комбинация сумма + знак:
 ```html
-<span data-dep-vc>$ 250</span>
+<span data-dep-vc>250 $</span>
 ```
 
 ### Пример использования для Польши
