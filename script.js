@@ -16,6 +16,8 @@ fetch(url)
             const currencies = document.querySelectorAll('[data-dep-currency]');
             const values = document.querySelectorAll('[data-dep-value]');
             const codes = document.querySelectorAll('[data-dep-code]');
+            const cv = document.querySelectorAll('[data-dep-cv]');
+            const vc = document.querySelectorAll('[data-dep-vc]');
 
             const dataCurrency = data.currency;
             const dataValue = data.value;
@@ -24,6 +26,8 @@ fetch(url)
             setInnerText(currencies, dataCurrency);
             setInnerTextValue(values, dataValue);
             setInnerText(codes, dataCode);
+            setInnerTextCV(cv, dataCurrency, dataValue, 'data-dep-cv');
+            setInnerTextCV(vc, dataCurrency, dataValue, 'data-dep-vc');
         }
     })
     .catch(error => {
@@ -53,6 +57,29 @@ function setInnerTextValue(array, text) {
 
         // Преобразуем результат обратно в строку с разделителями тысяч
         item.innerText = result.toLocaleString('en-US');
+    });
+}
+
+function setInnerTextCV(array, currency, value, attribute) {
+    // Удаляем запятые из текста и преобразуем в число
+    const numericText = Number(value.replace(/,/g, ''));
+
+    array.forEach(item => {
+        const depValue = Number(item.getAttribute(attribute));
+        let result;
+
+        if (depValue > 0) {
+            result = numericText * depValue; // Выполняем математическую операцию
+        } else {
+            result = numericText;
+        }
+
+        // Преобразуем результат обратно в строку с разделителями тысяч
+        if(attribute == 'data-dep-cv') {
+            item.innerText = currency + " " + result.toLocaleString('en-US');
+        } else {
+            item.innerText = result.toLocaleString('en-US') + " " + currency;
+        }
     });
 }
 
